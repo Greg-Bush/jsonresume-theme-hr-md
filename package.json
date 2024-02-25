@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-hr-md",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSON Resume Markdown Theme",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Grigorii Bushmanov",
   "license": "MIT",
   "dependencies": {
+    "html-to-md": "^0.8.5",
     "mustache": "^4.2.0"
   },
   "repository": {

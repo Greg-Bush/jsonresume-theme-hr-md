@@ -19,12 +19,13 @@
 ## Work Experience
 {{#work}}
 ### {{name}}
-**{{position}}**
-*{{startDate}} - {{endDate}}*
+**{{position}}** *({{startDate}} - {{endDate}})*
 - **Location:** {{location}}
 - **Keywords:** {{keywords}}
 - **Highlights:**
-  - {{#highlights}} {{.}} {{/highlights}}
+  {{#highlights}} 
+    - {{.}}
+  {{/highlights}}
 - **Summary:** {{summary}}
 - **URL:** [{{website}}]({{url}})
 {{/work}}
@@ -34,7 +35,10 @@
 ### {{name}}
 *{{startDate}} - {{endDate}}*
 - **Description:** {{description}}
-- **Roles:** {{#roles}} {{.}} {{/roles}}
+- **Roles:**
+{{#roles}}
+  - {{.}}
+{{/roles}}
 - **Entity:** {{entity}}
 - **URL:** [{{url}}]({{url}})
 {{/projects}}
@@ -52,9 +56,7 @@
   - {{.}} 
   {{/courses}}
 - **Skills:** 
-  {{#keywords}} 
-  - {{.}} 
-  {{/keywords}}
+  {{keywords}}
 {{/education}}
 
 ## Awards
@@ -69,7 +71,7 @@
 {{#skills}}
 - **{{name}}**
   - *Level:* {{level}}
-  - *Keywords:* {{#keywords}} {{.}} {{/keywords}}
+  - *Keywords:* {{keywords}}
 {{/skills}}
 
 ## Languages
@@ -86,9 +88,13 @@
 ## Volunteer Experience
 {{#volunteer}}
 ### {{organization}}
-**{{position}}**
-*{{startDate}} - {{endDate}}*
+**{{position}}** *({{startDate}} - {{endDate}})*
 - **URL:** [{{url}}]({{url}})
-- **Summary:** {{summary}}
-- **Highlights:** {{#highlights}} {{.}} {{/highlights}}
+{{#summary}}
+- **Summary:** {{.}}
+{{/summary}}
+- **Highlights:**
+  {{#highlights}} 
+    - {{.}}
+  {{/highlights}}
 {{/volunteer}}
