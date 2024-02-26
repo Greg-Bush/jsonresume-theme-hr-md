@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-hr-md",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JSON Resume Markdown Theme",
   "main": "index.js",
   "scripts": {

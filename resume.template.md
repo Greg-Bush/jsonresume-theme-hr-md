@@ -1,7 +1,9 @@
 # {{basics.name}}
 *{{basics.label}}*
 
-![Profile Image]({{basics.image}})
+{{#basics.image}}
+![Profile Image]({{.}})
+{{/basics.image}}
 
 - **Email:** {{basics.email}}
 - **Phone:** {{basics.phone}}
